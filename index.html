@@ -7,21 +7,29 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>Rock, Paper, Scissors</h1>
-    <div class="game">
-        <p>Make your choice:</p>
-        <button id="rock">Rock</button>
-        <button id="paper">Paper</button>
-        <button id="scissors">Scissors</button>
-    </div>
+    <div class="container">
+        <h1>Rock, Paper, Scissors</h1>
+        <p>Play 5 rounds to determine the winner!</p>
 
-    <div class="results">
-        <h2>Results</h2>
-        <p id="result-message">Make your move!</p>
-        <p>Human Score: <span id="human-score">0</span></p>
-        <p>Computer Score: <span id="computer-score">0</span></p>
-    </div>
+        <div class="game">
+            <p>Choose your move:</p>
+            <button id="rock">Rock</button>
+            <button id="paper">Paper</button>
+            <button id="scissors">Scissors</button>
+        </div>
 
+        <div class="results">
+            <h2>Round Results</h2>
+            <p id="computer-choice">Computer chose: </p>
+            <p id="result-message">Make your move!</p>
+            <p>Human Score: <span id="human-score">0</span></p>
+            <p>Computer Score: <span id="computer-score">0</span></p>
+        </div>
+
+        <div class="final-result">
+            <h2 id="final-message"></h2>
+        </div>
+    </div>
     <script src="script.js"></script>
 </body>
 </html>
